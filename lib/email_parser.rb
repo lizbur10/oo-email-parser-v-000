@@ -16,3 +16,5 @@ class EmailParser
   end
 
 end
+
+"john@doe.com, person@somewhere.org moby@mobyworld.org,moby@mobyuniverse.org   mobyrules@mobykingdom.org, , "
