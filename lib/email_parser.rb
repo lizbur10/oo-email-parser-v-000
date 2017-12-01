@@ -12,6 +12,10 @@
 class EmailParser
   attr_accessor :email_string
 
+  def initialize(email_string)
+    
+  end
+
   def save
     @@all << self
   end
