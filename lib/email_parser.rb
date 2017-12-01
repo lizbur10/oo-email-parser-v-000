@@ -16,18 +16,18 @@ class EmailParser
     @email_string = email_string
   end
 
-  def save
+  def self.save
     @@all << self
   end
 
-  def all
+  def self.all
     @@all
   end
 
   def parse
     emails = @email_string.split(/[,\s?]/)
     emails.each do | email |
-      !self.all.include?(email) { email.save }
+      !self.class.all.include?(email) { email.save }
     end
   end
 
