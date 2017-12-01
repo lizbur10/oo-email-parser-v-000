@@ -26,7 +26,7 @@ class EmailParser
   end
 
   def parse
-    emails = @email_string.split(/[,\s]/)
+    emails = @email_string.split(/[\s,]+/)
     emails.each do | email |
       !self.class.all.include?(email) { email.save }
     end
