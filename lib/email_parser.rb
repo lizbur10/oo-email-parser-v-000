@@ -12,7 +12,7 @@
 class EmailParser
   attr_accessor :email_string
   @@all = []
-  
+
   def initialize(email_string)
     @email_string = email_string
   end
