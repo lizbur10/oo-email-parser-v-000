@@ -10,7 +10,7 @@
 
 
 class EmailParser
-#  attr_accessor :email
+  attr_accessor :email_string
 
   def save
     @@all << self
